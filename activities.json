@@ -6,43 +6,43 @@
         },
         {
             "name": "BUILD STRUCTURE",
-            "description": "Description: Recruit and train units to form or bolster your kingdom's army."
+            "description": "You attempt to build a structure in the settlement that's granting the Civic activity. You may choose any structure for which you meet the requirements. Select the appropriate number of contiguous buildable lots in a single block as specified by the structure's entry and spend the specified RP and Commodity cost. Then attempt the structure's skill check. You can also use this activity to attempt to repair a structure that was damaged as the result of an event but hasn't been replaced by Rubble. To do this, first spend half the structure's listed RP and Commodity cost, and then attempt the specified check. The existing structure gives you a +2 item bonus to the check. On a success, record the new construction on the Urban Grid. Unless the structure's entry states otherwise, its effects are immediate; if the structure adjusts a Ruin's point total, adjust it upon construction."
         },
         {
             "name": "CLAIM HEX",
-            "description": "Description: Send explorers to chart new lands or uncover resources and secrets."
+            "description": "Your surveyors fully explore the hex and attempt to add it into your kingdom's domain. Spend 1 RP and then attempt a basic Exploration, Intrigue, Magic, or Wilderness check."
         },
         {
             "name": "ESTABLISH SETTLEMENT",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "You draw up plans, gather resources, entice citizens, and establish boundaries to found a brand new settlement in the hex. Attempt a basic Engineering, Industry, Politics, or Scholarship check. If you cannot pay the RP required by the result of this check, treat your result as a critical failure. A settlement always starts as a village. See page 540 for further details about building settlements."
         },
         {
             "name": "ESTABLISH TRADE AGREEMENT",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "You send a band of merchants out to establish a trade agreement between your kingdom and a group with whom you've established diplomatic relations. If a navigable river connects your kingdom with the other group's territory, you can attempt a Boating check to Establish the Trade Agreement. If your kingdom's proficiency rank in Magic is Master or higher, you can attempt a Magic check. Otherwise, attempt a Trade check. The check's DC is either the group's Negotiation DC (see sidebar) or your kingdom's Control DC, whichever is higher."
         },
         {
             "name": "FOCUSED ATTENTION",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "You set aside time to focus attention on aiding another leader in an activity. Choose another leader and a Kingdom skill, then attempt a DC 20 check using the chosen skill. On a success, you grant that leader a +2 circumstance bonus to one kingdom check using that skill, provided that leader attempts the skill check during the same Kingdom turn. The Cooperative Leadership Kingdom feat (page 531) increases the efficiency of this activity."
         },
         {
             "name": "NEW LEADERSHIP",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "You announce the promotion of a character into a leadership role, whether they're a newly appointed leader or just shifting from one leadership role to another.\n\nYou normally perform this activity at the start of a Kingdom turn, but if unexpected events (such as the death of the character) remove a leader from a leadership role, you may immediately use the New Leadership activity to attempt to assign a new leader to that role, even outside of a Kingdom turn (applying the vacancy penalty for that role as appropriate). Attempt a basic Intrigue, Politics, Statecraft, or Warfare skill check—while any of these skills can be used, each skill is particularly suited to assigning two specific leadership roles.\nIntrigue: Grants a +2 circumstance bonus to checks to assign Emissaries and Treasurers.\nPolitics: Grants a +2 circumstance bonus to checks to assign Counselors and Rulers.\nStatecraft: Grants a +2 circumstance bonus to checks to assign Magisters and Viceroys.\nWarfare: Grants a +2 circumstance bonus to checks to assign Generals and Wardens.\nRulers are particularly difficult to assign; when you take this activity to assign a new Ruler, you take a –4 circumstance penalty to the skill check, and unless you achieve a critical success, you gain 1 additional Unrest.\n\nWhether or not you are simultaneously assigning a leader, you may also use this activity to attempt to reselect the four leadership roles that you have invested. Any result other than a critical failure allows this."
         },
         {
             "name": "PLEDGE OF FEALTY (TRAINED)",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "When your representatives encounter freeholders, refugees, independent groups, or other bands of individuals gathered in the wilderness who aren't already part of a nation, you can offer them a place in your kingdom, granting them the benefits of protection, security, and prosperity in exchange for their fealty. The benefits granted to your kingdom can vary wildly, but often manifest as one-time boons to your commodities or unique bonuses against certain types of events. The adventure text in this campaign offers numerous examples of groups who could accept a Pledge of Fealty. You can attempt this skill check with Intrigue, Statecraft, or Warfare; however, certain groups will respond better (or worse) to specific skills. The DC is the group's Negotiation DC"
         },
         {
             "name": "QUELL UNREST",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "You send your agents among the citizenry with the charge of suppressing dissent and calming unrest. You can attempt a basic Arts, Folklore, Intrigue, Magic, Politics, or Warfare check to Quell Unrest, but you can never use the same skill for this activity in consecutive Kingdom turns. This activity cannot be attempted more than once per Kingdom turn."
         },
         {
             "name": "REPAIR REPUTATION (TRAINED)",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "Description: When things have gotten out of hand in the kingdom and the nation's reputation has become damaged, you can focus efforts on a campaign to reassure the citizens and bring them closer together, stamp down crime, organize repairs and maintenance of public structures, or strive to adjust poor public opinions.\n\nThe skill used to Repair Reputation depends on which Ruin total you wish to reduce. If you wish to reduce your Corruption, you attempt an Arts check. If you wish to reduce your Crime, you attempt a Trade check. If you wish to reduce your Decay, you attempt an Engineering check. If you wish to reduce your Strife, you attempt an Intrigue check. In all cases, the DC is your Control DC + 2."
         },
         {
             "name": "REST AND RELAX",
-            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+            "description": "Working non-stop can burn out even the most devoted and dedicated individual. As such, it's important to take time for yourself, and thus set a good example for the nation. You take time to relax, and you extend the chance to unwind to your citizens as well. The Kingdom skill you use to determine the effectiveness of your time off depends on how you want to spend it: Use a basic Arts check to spend the time engaged in entertainment or the pursuit of a hobby. Use a basic Boating check to enjoy trips on the lakes and rivers of your kingdom. Use a basic Scholarship check to spend the time reading or studying a topic of personal interest beyond your daily duties. Use a basic Trade check to spend your time shopping or feasting. Use a basic Wilderness check to get away from the bustle and relax in the countryside. If your kingdom Rested and Relaxed the previous Kingdom turn, the DC increases by 4, as your kingdom's production and output hasn't had a chance to catch up to all those vacation days."
         }
     ]
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pathfinder 2E Kingdom Rules</title>
+    <title>Kingdom Helper</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -42,51 +42,14 @@
         </section>
     </div>
 
-        <section id="kingdom-activities">
-            <h2>Kingdom Activities</h2>
-            <div class="flex-container">
-                <!-- Flexboxes will be dynamically generated here -->
-            </div>
-        </section>
-    </div>
+    <section id="kingdom-activities">
+        <h2>Kingdom Activities</h2>
+        <div class="flex-container">
+            <!-- Flexboxes will be dynamically generated here -->
+        </div>
+    </section>
+
     <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Fetch activities and populate the kingdom-activities section
-            fetch('activities.json')
-                .then(response => response.json())
-                .then(data => {
-                    const activities = data.activities;
-                    const flexContainer = document.querySelector('#kingdom-activities .flex-container');
-                    flexContainer.innerHTML = ''; // Clear existing content
-    
-                    activities.forEach(activity => {
-                        const activityElement = document.createElement('p');
-                        activityElement.classList.add('kingdom-activity');
-                        activityElement.innerHTML = `
-                            <span class="activity">${activity.name}
-                                <span class="activity-tooltip">${activity.description}</span>
-                            </span>
-                        `;
-                        flexContainer.appendChild(activityElement);
-                    });
-                })
-                .catch(error => console.error('Error loading activities:', error));
-    
-            // Dark mode toggle functionality
-            const toggleButton = document.getElementById('dark-mode-toggle');
-            const body = document.body;
-            const nav = document.querySelector('nav');
-            const activities = document.querySelectorAll('.activity');
-            const tooltips = document.querySelectorAll('.activity-tooltip');
-    
-            toggleButton.addEventListener('click', () => {
-                body.classList.toggle('light-mode');
-                nav.classList.toggle('light-mode');
-                activities.forEach(activity => activity.classList.toggle('light-mode'));
-                tooltips.forEach(tooltip => tooltip.classList.toggle('light-mode'));
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
