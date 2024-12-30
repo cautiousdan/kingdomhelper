@@ -64,35 +64,51 @@
         },
         {
             "id": "commerce-1",
-            "description": "Collect taxes from the kingdom."
+            "description": "You can Collect Taxes once per Kingdom turn to attempt to bolster your Economy-based checks for the remainder of the Kingdom turn. If you don't attempt to Collect Taxes, you can instead attempt a DC 11 flat check; on a success, reduce Unrest by 1."
         },
         {
             "id": "commerce-2",
-            "description": "Approve expenses for the kingdom."
+            "description": "You can draw upon the kingdom's funds to enhance the standard of living for its citizens by attempting the Improve Lifestyle activity or you can attempt a withdrawal from the kingdom's funds using the Tap Treasury activity."
         },
         {
             "id": "commerce-3",
-            "description": "Tap into the kingdom's commodities."
+            "description": "If your kingdom has any stockpiles of Commodities, you can attempt the Trade Commodities activity to bolster your RP for the turn."
         },
         {
             "id": "commerce-4",
-            "description": "Manage trade agreements for the kingdom."
+            "description": "If you've established trade agreements, you can use the Manage Trade Agreements activity."
         },
         {
             "id": "activity-1",
-            "description": "Carry out leadership activities."
+            "description": "If your kingdom's capital has a Castle, Palace, or Town Hall, each PC in a leadership role may attempt up to three Leadership activities. If your capital has none of these structures, each PC can take no more than two Leadership activities during this step. Your party chooses the order you go in when taking Leadership activities. Unless an activity states otherwise, a leader cannot attempt the same Leadership activity more than once per Kingdom turn."
         },
         {
             "id": "activity-2",
-            "description": "Carry out region activities."
+            "description": "The PC leaders may now collectively attempt up to three Region activities. The players decide who rolls any skill checks needed to resolve these activities."
         },
         {
             "id": "activity-3",
-            "description": "Carry out civic activities."
+            "description": "Your party may now attempt one Civic activity for each of the kingdom's settlements. You determine the order in which these activities are attempted and who rolls any skill checks."
         },
         {
             "id": "activity-4",
-            "description": "Carry out army activities."
+            "description": "Building and maintaining armies dovetails with the Kingdom turn, but these rules can be largely skipped over during times of peace. During wars, a fourth step—Army Activities—occurs at the end of the Activity phase. Rules for armies and warfare are in Appendix 3"
+        },
+        {
+            "id": "event-1",
+            "description": "Attempt a DC 16 flat check. On success, a random kingdom event occurs (see Kingdom Events). If no random event occurs, the DC for this check in the next Kingdom turn is reduced by 5. Once an event occurs, the DC resets to 16."
+        },
+        {
+            "id": "event-2",
+            "description": "Random events present opportunities to go forth in exploration or encounter mode to deal with a rampaging monster or the like; these are handled now. In some chapters of the Kingmaker Adventure Path, specific story events are introduced outside of Kingdom turns; these are resolved when they occur."
+        },
+        {
+            "id": "event-3",
+            "description": "The GM now awards any kingdom XP earned during that turn. If the kingdom experienced a random event, it receives 30 XP. The first Kingdom turn that your kingdom spent 100 RP, gain 80 kingdom XP as a milestone award.\n\n In addition, any RP that remains unspent is now converted to kingdom XP on a 1 to 1 ration, to a maximum of 120 XP per Kingdom turn."
+        },
+        {
+            "id": "event-4",
+            "description": "If your kingdom's XP total is above 1,000, and your kingdom isn't at its maximum level, increase your kingdom level by 1 and subtract 1,000 from your XP total. See Leveling Up Your Kingdom for the full rules for leveling up."
         }
     ]
 }
