@@ -1,0 +1,48 @@
+{
+    "activities": [
+        {
+            "name": "ABANDON HEX",
+            "description": "After careful consideration, you decide that you would rather not hold onto a particular hex as part of your claimed territory. You renounce your claim to it and pull back any settlers or explorers. Attempt a basic Exploration or Wilderness check. You can abandon more than one hex at a time, but each additional hex you abandon increases the DC of this check by 1."
+        },
+        {
+            "name": "BUILD STRUCTURE",
+            "description": "Description: Recruit and train units to form or bolster your kingdom's army."
+        },
+        {
+            "name": "CLAIM HEX",
+            "description": "Description: Send explorers to chart new lands or uncover resources and secrets."
+        },
+        {
+            "name": "ESTABLISH SETTLEMENT",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "ESTABLISH TRADE AGREEMENT",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "FOCUSED ATTENTION",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "NEW LEADERSHIP",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "PLEDGE OF FEALTY (TRAINED)",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "QUELL UNREST",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "REPAIR REPUTATION (TRAINED)",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        },
+        {
+            "name": "REST AND RELAX",
+            "description": "Description: Allocate and manage kingdom resources effectively to ensure growth and stability."
+        }
+    ]
+}
