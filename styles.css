@@ -54,12 +54,25 @@ nav a:hover {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    white-space: nowrap;
+    white-space: normal; /* Enable line wrapping */
+    max-width: 200px; /* Set a maximum width */
     z-index: 10;
+    word-wrap: break-word; /* Ensure long words break */
 }
 
 .activity:hover .activity-tooltip {
     display: block;
+}
+
+.activity-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
 }
 
 .flex-container {
