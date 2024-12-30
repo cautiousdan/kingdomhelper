@@ -2,7 +2,7 @@
     "activities": [
         {
             "name": "ABANDON HEX",
-            "description": "Description: Build or upgrade a structure within your kingdom to enhance its capabilities."
+            "description": "After careful consideration, you decide that you would rather not hold onto a particular hex as part of your claimed territory. You renounce your claim to it and pull back any settlers or explorers. Attempt a basic Exploration or Wilderness check. You can abandon more than one hex at a time, but each additional hex you abandon increases the DC of this check by 1."
         },
         {
             "name": "BUILD STRUCTURE",
