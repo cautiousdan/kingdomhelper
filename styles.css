@@ -46,8 +46,8 @@ nav a:hover {
 
 .activity-tooltip {
     display: none;
-    position: absolute;
-    bottom: 100%;
+    position: fixed; /* Use fixed positioning to place the tooltip relative to the viewport */
+    bottom: 10%; /* Position the tooltip in the bottom two-thirds of the screen */
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8);
@@ -55,9 +55,11 @@ nav a:hover {
     padding: 10px;
     border-radius: 5px;
     white-space: normal; /* Enable line wrapping */
-    max-width: 200px; /* Set a maximum width */
+    width: 80vw; /* Take up 80% of the horizontal space */
+    max-width: 80vw; /* Ensure it doesn't exceed the container */
     z-index: 10;
     word-wrap: break-word; /* Ensure long words break */
+    overflow-wrap: break-word; /* Ensure long words break */
 }
 
 .activity:hover .activity-tooltip {
@@ -91,9 +93,9 @@ nav a:hover {
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
-@media (max-width: 600px) {
-    .flex-container {
-        flex-direction: column;
+@media (min-width: 600px) {
+    .activity-tooltip {
+        max-width: 33vw; /* Set a maximum width relative to the viewport for larger screens */
     }
 }
 
