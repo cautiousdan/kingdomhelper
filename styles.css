@@ -1,0 +1,114 @@
+/* Default to dark mode */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.kingdom-step {
+    margin-bottom: 15px;
+}
+
+.activity {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.activity:hover {
+    text-decoration: underline;
+}
+
+.activity-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.activity:hover .activity-tooltip {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Add gap between flex items */
+}
+
+.flex-container .kingdom-activity {
+    display: inline-flex;
+    flex: 0 1 auto;
+    margin: 10px;
+    border: 1px solid #ccc; /* Add a thin border */
+    padding: 10px; /* Add padding inside the border */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* Center all h2 headings */
+h1, h2 {
+    text-align: center;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav.light-mode {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+nav.light-mode a {
+    color: black;
+}
+
+.activity.light-mode {
+    color: #007bff;
+}
+
+.activity-tooltip.light-mode {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
