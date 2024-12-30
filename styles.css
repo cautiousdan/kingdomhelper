@@ -44,26 +44,51 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.activity-tooltip {
+/* .activity-tooltip {
     display: none;
-    position: fixed; /* Use fixed positioning to place the tooltip relative to the viewport */
-    bottom: 10%; /* Position the tooltip in the bottom two-thirds of the screen */
+    position: fixed;
+    bottom: 10%; 
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
     border-radius: 5px;
-    white-space: normal; /* Enable line wrapping */
-    width: 80vw; /* Take up 80% of the horizontal space */
-    max-width: 80vw; /* Ensure it doesn't exceed the container */
+    white-space: normal; 
+    width: 80vw; 
+    max-width: 80vw; 
     z-index: 10;
-    word-wrap: break-word; /* Ensure long words break */
-    overflow-wrap: break-word; /* Ensure long words break */
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+} */
+
+.activity-tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Use opacity for fade-in effect */
+    transition: opacity 0.3s;
+    width: 100%; /* Use all available space on smaller screens */
+    max-width: 75%; /* Use 50% of the horizontal space on larger screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 .activity:hover .activity-tooltip {
     display: block;
+}
+
+.activity:hover .activity-tooltip,
+.turn-step:hover .activity-tooltip {
+    visibility: visible;
+    opacity: 1; /* Fade-in effect */
 }
 
 .activity-tooltip::after {
