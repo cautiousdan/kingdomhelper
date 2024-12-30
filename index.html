@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder 2E Kingdom Rules</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Kingdom Turn Steps</a>
+        <a href="#">Kingdom Activities</a>
+    </nav>
+
+    <div class="container">
+        <h1>Pathfinder 2nd Edition: Kingdom Rules Reference</h1>
+    
+        <section id="kingdom-turn-steps">
+            <h2>Kingdom Turn Steps</h2>
+            <div class="flex-container">
+                <ul>
+                    <ul>Upkeep Phase</ul>
+                    <li>Step 1: Assign Leadership Roles</li>
+                    <li>Step 2: Activity Phase</li>
+                    <li>Step 3: Event Phase</li>
+                </ul>
+                <ul>
+                    <ul>Commerce Phase</ul>
+                    <li>Step 1: Collect Taxes</li>
+                    <li>Step 2: Approve Expenses</li>
+                    <li>Step 3: Tap Commodities</li>
+                    <li>Step 4: Manage Trade Agreements</li>
+                </ul>
+                <ul>
+                    <ul>Activity Phase</ul>
+                    <li>Step 1: Leadership Activities</li>
+                    <li>Step 2: Region Activities</li>
+                    <li>Step 3: Civic Activities</li>
+                    <li>Step 4: Army Activities</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+        <section id="kingdom-activities">
+            <h2>Kingdom Activities</h2>
+            <div class="flex-container">
+                <!-- Flexboxes will be dynamically generated here -->
+            </div>
+        </section>
+    </div>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('activities.json')
+                .then(response => response.json())
+                .then(data => {
+                    const activities = data.activities;
+                    const flexContainer = document.querySelector('#kingdom-activities .flex-container');
+                    flexContainer.innerHTML = ''; // Clear existing content
+    
+                    activities.forEach(activity => {
+                        const activityElement = document.createElement('p');
+                        activityElement.classList.add('kingdom-activity');
+                        activityElement.innerHTML = `
+                            <span class="activity">${activity.name}
+                                <span class="activity-tooltip">${activity.description}</span>
+                            </span>
+                        `;
+                        flexContainer.appendChild(activityElement);
+                    });
+                })
+                .catch(error => console.error('Error loading activities:', error));
+        });
+    </script>
+</body>
+</html>
