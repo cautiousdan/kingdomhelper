@@ -6,14 +6,31 @@ document.addEventListener('DOMContentLoaded', () => {
             const activities = data.activities;
             const flexContainer = document.querySelector('#kingdom-activities .flex-container');
             flexContainer.innerHTML = ''; // Clear existing content
-
+            
             activities.forEach(activity => {
                 const activityElement = document.createElement('p');
                 activityElement.classList.add('kingdom-activity');
                 const descriptionWithLineBreaks = activity.description.replace(/\n/g, '<br>');
+                let tooltipContent = `Description: ${descriptionWithLineBreaks}`;
+            
+                if (activity["Critical Success"]) {
+                    tooltipContent += `<br><br>Critical Success: ${activity["Critical Success"]}`;
+                }
+                if (activity["Success"]) {
+                    tooltipContent += `<br><br>Success: ${activity["Success"]}`;
+                }
+                if (activity["Failure"]) {
+                    tooltipContent += `<br><br>Failure: ${activity["Failure"]}`;
+                }
+                if (activity["Critical Failure"]) {
+                    tooltipContent += `<br><br>Critical Failure: ${activity["Critical Failure"]}`;
+                }
+                if (activity["Special"]) {
+                    tooltipContent += `<br><br>Special: ${activity["Special"]}`;
+                }
                 activityElement.innerHTML = `
                     <span class="activity">${activity.name}
-                        <span class="activity-tooltip"> Description: ${descriptionWithLineBreaks}</span>
+                        <span class="activity-tooltip">${tooltipContent}</span>
                     </span>
                 `;
                 flexContainer.appendChild(activityElement);
