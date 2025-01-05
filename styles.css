@@ -106,15 +106,15 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px; /* Add gap between flex items */
+    gap: 10px; /* Add gap between flex items */
 }
 
 .flex-container .kingdom-activity {
     display: inline-flex;
     flex: 0 1 auto;
-    margin: 10px;
+    margin: 5px;
     border: 1px solid #ccc; /* Add a thin border */
-    padding: 10px; /* Add padding inside the border */
+    padding: 5px; /* Add padding inside the border */
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
@@ -125,7 +125,7 @@ nav a:hover {
 }
 
 /* Center all h2 headings */
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
 }
 
