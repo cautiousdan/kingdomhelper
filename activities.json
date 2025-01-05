@@ -52,6 +52,14 @@
             "Critical Failure": "You gain nothing from the Clandestine Business but angry citizens. Increase Unrest by 1d6, Corruption by 2, and one other Ruin of your choice by 1."
         },
         {
+            "name": "COLLECT TAXES",
+            "description": "Tax collectors travel through the lands to collect funds for the betterment of the kingdom. Attempt a basic check.",
+            "Critical Success": "Your tax collectors are wildly successful! For the remainder of the Kingdom turn, gain a +2 circumstance bonus to Economy-based checks.",
+            "Success": "Your tax collectors gather enough to grant you a +1 circumstance bonus to Economy-based checks for the remainder of the Kingdom turn. If you attempted to Collect Taxes during the previous  turn, increase Unrest by 1.",
+            "Failure": "As success, but the people are unhappy about taxes\u2014increase Unrest by 1 (or by 2 if you attempted to Collect Taxes the previous turn).",
+            "Critical Failure": " Your tax collectors encounter resistance from the citizens and their attempts to gather taxes are rebuffed. While the tax collectors still manage to gather enough taxes to support essential government needs, they have angered the kingdom\u2019s citizens and encouraged rebellious acts. Increase Unrest by 2, and choose one Ruin to increase by 1."
+        },
+        {
             "name": "ESTABLISH SETTLEMENT",
             "description": "You draw up plans, gather resources, entice citizens, and establish boundaries to found a brand new settlement in the hex. Attempt a basic Engineering, Industry, Politics, or Scholarship check. If you cannot pay the RP required by the result of this check, treat your result as a critical failure. A settlement always starts as a village. See page 540 for further details about building settlements.",
             "Critical Success": "You establish the settlement largely with the aid of enthusiastic volunteers. Spend 1d6 RP.",
@@ -72,6 +80,22 @@
             "description": "You set aside time to focus attention on aiding another leader in an activity. Choose another leader and a Kingdom skill, then attempt a DC 20 check using the chosen skill. On a success, you grant that leader a +2 circumstance bonus to one kingdom check using that skill, provided that leader attempts the skill check during the same Kingdom turn. The Cooperative Leadership Kingdom feat (page 531) increases the efficiency of this activity."
         },
         {
+            "name": "IMPROVE LIFESTYLE",
+            "description": "Attempt a basic check to draw upon your kingdom\u2019s treasury to enhance the quality of life for your citizens. This activity can be taken only during the Commerce phase of a Kingdom turn.",
+            "Critical Success": "Your push to Improve Lifestyles affords your citizens significant free time to pursue recreational activities. For the remainder of the Kingdom turn, you gain a +2 circumstance bonus to Culture-based checks.",
+            "Success": "Your push to Improve Lifestyles helps your citizens enjoy life. For the remainder of the Kingdom turn, you gain a +1 circumstance bonus to Culture-based checks.",
+            "Failure": "As success, but you\u2019ve strained your treasury. Take a \u20131 circumstance penalty to Economy-based checks for the remainder of this Kingdom turn.",
+            "Critical Failure": "Your attempt to Improve Lifestyles backfires horribly as criminal elements in your kingdom abuse your generosity. You take a \u20131 circumstance penalty to Economy-based checks for the remainder of the Kingdom turn, gain 1 Unrest, and add 1 to a Ruin of your choice."
+        },
+        {
+            "name": "MANAGE TRADE AGREEMENTS",
+            "description": "You send agents out to attend to established trade agreements. Spend 2 RP per Trade Agreement you wish to manage. Then attempt a basic check. If you Managed Trade Agreements on the previous turn, increase this DC by 5.",
+            "Critical Success": "At the start of your next Kingdom turn, you gain 1 bonus Resource Die per trade agreement, and 1 Commodity of your choice per trade agreement (no more than half of these Commodities may be Luxuries).",
+            "Success": "As critical success, but you must choose between gaining Resource Dice or Commodities.",
+            "Failure": "You gain 1 RP per trade agreement at the start of your next turn.",
+            "Critical Failure": "You gain no benefit, as your traders and merchants met with bad luck on the road. You can\u2019t Manage Trade Agreements for 1 Kingdom turn."
+        },
+        {
             "name": "NEW LEADERSHIP",
             "description": "You announce the promotion of a character into a leadership role, whether they're a newly appointed leader or just shifting from one leadership role to another.\n\nYou normally perform this activity at the start of a Kingdom turn, but if unexpected events (such as the death of the character) remove a leader from a leadership role, you may immediately use the New Leadership activity to attempt to assign a new leader to that role, even outside of a Kingdom turn (applying the vacancy penalty for that role as appropriate). Attempt a basic Intrigue, Politics, Statecraft, or Warfare skill check\u2014while any of these skills can be used, each skill is particularly suited to assigning two specific leadership roles.\nIntrigue: Grants a +2 circumstance bonus to checks to assign Emissaries and Treasurers.\nPolitics: Grants a +2 circumstance bonus to checks to assign Counselors and Rulers.\nStatecraft: Grants a +2 circumstance bonus to checks to assign Magisters and Viceroys.\nWarfare: Grants a +2 circumstance bonus to checks to assign Generals and Wardens.\nRulers are particularly difficult to assign; when you take this activity to assign a new Ruler, you take a \u20134 circumstance penalty to the skill check, and unless you achieve a critical success, you gain 1 additional Unrest.\n\nWhether or not you are simultaneously assigning a leader, you may also use this activity to attempt to reselect the four leadership roles that you have invested. Any result other than a critical failure allows this.",
             "Critical Success": "The people love the new leader. The leader immediately provides the benefits tied to occupying the new role and gains a +1 circumstance bonus to all Kingdom skill checks they attempt before the end of the next Kingdom turn",
@@ -86,30 +110,6 @@
             "Success": "As success, but you don't claim the hex the group is in. Immediately roll 1 Resource Die. You must spend RP equal to the result to integrate the group into your kingdom.",
             "Failure": "The group refuses to pledge to you at this time. You can attempt to get them to Pledge Fealty next turn. Increase Unrest by 1.",
             "Critical Failure": "The group refuses to pledge to you\u2014 furthermore, it will never Pledge Fealty to your kingdom, barring significant in-play changes or actions by the PCs (subject to the GM's approval). The group's potentially violent rebuff of your offer increases Unrest by 2 and increases a Ruin of your choice by 1."
-        },
-        {
-            "name": "QUELL UNREST",
-            "description": "You send your agents among the citizenry with the charge of suppressing dissent and calming unrest. You can attempt a basic Arts, Folklore, Intrigue, Magic, Politics, or Warfare check to Quell Unrest, but you can never use the same skill for this activity in consecutive Kingdom turns. This activity cannot be attempted more than once per Kingdom turn.",
-            "Critical Success": "Reduce Unrest by 1d6.",
-            "Success": "Reduce Unrest by 1.",
-            "Failure": "You fail to reduce Unrest.",
-            "Critical Failure": "You not only fail to reduce Unrest, but actually incite further anger among the citizenry. Choose one of the following: increase Unrest by 1d4 or increase two Ruins of your choice by 1."
-        },
-        {
-            "name": "REPAIR REPUTATION (TRAINED)",
-            "description": "Description: When things have gotten out of hand in the kingdom and the nation's reputation has become damaged, you can focus efforts on a campaign to reassure the citizens and bring them closer together, stamp down crime, organize repairs and maintenance of public structures, or strive to adjust poor public opinions.\n\nThe skill used to Repair Reputation depends on which Ruin total you wish to reduce. If you wish to reduce your Corruption, you attempt an Arts check. If you wish to reduce your Crime, you attempt a Trade check. If you wish to reduce your Decay, you attempt an Engineering check. If you wish to reduce your Strife, you attempt an Intrigue check. In all cases, the DC is your Control DC + 2.",
-            "Critical Success": "You reduce the targeted Ruin by 2 and reduce its current ruin penalty by 1 to a minimum of 0.",
-            "Success": "You reduce the targeted Ruin by 1.",
-            "Failure": "You fail to reduce the targeted Ruin. You cannot attempt to Repair Reputation on this Ruin for 1 Kingdom turn.",
-            "Critical Failure": "You fail to reduce the targeted Ruin in a particularly public and embarrassing way. Increase Unrest by 1d4, and you cannot attempt to Repair Reputation for 3 Kingdom turns."
-        },
-        {
-            "name": "REST AND RELAX",
-            "description": "Working non-stop can burn out even the most devoted and dedicated individual. As such, it's important to take time for yourself, and thus set a good example for the nation. You take time to relax, and you extend the chance to unwind to your citizens as well. The Kingdom skill you use to determine the effectiveness of your time off depends on how you want to spend it: Use a basic Arts check to spend the time engaged in entertainment or the pursuit of a hobby. Use a basic Boating check to enjoy trips on the lakes and rivers of your kingdom. Use a basic Scholarship check to spend the time reading or studying a topic of personal interest beyond your daily duties. Use a basic Trade check to spend your time shopping or feasting. Use a basic Wilderness check to get away from the bustle and relax in the countryside. If your kingdom Rested and Relaxed the previous Kingdom turn, the DC increases by 4, as your kingdom's production and output hasn't had a chance to catch up to all those vacation days.",
-            "Critical Success": "The citizens enjoy the time off and are ready to get back to work. Reduce Unrest by 1, and the next Leadership activity you take gains a +2 circumstance bonus.",
-            "Success": "The time spent relaxing has calmed nerves; reduce Unrest by 1.",
-            "Failure": "The rest is welcome, but not particularly beneficial in the long term.",
-            "Critical Failure": "The time is wasted, and when you get back to work, you have to spend extra time catching up. Take a \u20132 circumstance penalty to your next skill check made as a Leadership activity"
         },
         {
             "name": "PROGNOSTICATION",
@@ -139,6 +139,14 @@
             "Source": "Kingmaker Adventure Path pg. 529"
         },
         {
+            "name": "QUELL UNREST",
+            "description": "You send your agents among the citizenry with the charge of suppressing dissent and calming unrest. You can attempt a basic Arts, Folklore, Intrigue, Magic, Politics, or Warfare check to Quell Unrest, but you can never use the same skill for this activity in consecutive Kingdom turns. This activity cannot be attempted more than once per Kingdom turn.",
+            "Critical Success": "Reduce Unrest by 1d6.",
+            "Success": "Reduce Unrest by 1.",
+            "Failure": "You fail to reduce Unrest.",
+            "Critical Failure": "You not only fail to reduce Unrest, but actually incite further anger among the citizenry. Choose one of the following: increase Unrest by 1d4 or increase two Ruins of your choice by 1."
+        },
+        {
             "name": "RELOCATE CAPITAL",
             "description": "The kingdom leaders announce that they are uprooting the seat of government from its current home and reestablishing it in another settlement. Attempt a check with a DC equal to the kingdom's Control DC + 5. You cannot Relocate your Capital again for at least 3 Kingdom turns.",
             "Critical Success": "The move goes off splendidly, with people excited about the new capital and celebrating the leadership's wisdom.",
@@ -148,6 +156,14 @@
             "Source": "Kingmaker Adventure Path pg. 525"
         },
         {
+            "name": "REPAIR REPUTATION (TRAINED)",
+            "description": "Description: When things have gotten out of hand in the kingdom and the nation's reputation has become damaged, you can focus efforts on a campaign to reassure the citizens and bring them closer together, stamp down crime, organize repairs and maintenance of public structures, or strive to adjust poor public opinions.\n\nThe skill used to Repair Reputation depends on which Ruin total you wish to reduce. If you wish to reduce your Corruption, you attempt an Arts check. If you wish to reduce your Crime, you attempt a Trade check. If you wish to reduce your Decay, you attempt an Engineering check. If you wish to reduce your Strife, you attempt an Intrigue check. In all cases, the DC is your Control DC + 2.",
+            "Critical Success": "You reduce the targeted Ruin by 2 and reduce its current ruin penalty by 1 to a minimum of 0.",
+            "Success": "You reduce the targeted Ruin by 1.",
+            "Failure": "You fail to reduce the targeted Ruin. You cannot attempt to Repair Reputation on this Ruin for 1 Kingdom turn.",
+            "Critical Failure": "You fail to reduce the targeted Ruin in a particularly public and embarrassing way. Increase Unrest by 1d4, and you cannot attempt to Repair Reputation for 3 Kingdom turns."
+        },
+        {
             "name": "REQUEST FOREIGN AID",
             "description": "When disaster strikes, you send out a call for help to another nation with whom you have diplomatic relations. The DC of this check is equal to the other group's Negotiation DC +2.",
             "Critical Success": "Your ally's aid grants a +4 circumstance bonus to any one Kingdom skill check attempted during the remainder of this Kingdom turn. You can choose to apply this bonus to any Kingdom skill check after the die is rolled, but must do so before the result is known. In addition, immediately roll 2 Resource Dice and gain RP equal to the result; this RP does not accrue into XP at the end of the turn if you don't spend it.",
@@ -155,6 +171,30 @@
             "Failure": "Your ally marshals its resources but cannot get aid to you in time to deal with your current situation. At the start of your next Kingdom turn, gain 1d4 RP.",
             "Critical Failure": "Your ally is tangled up in its own problems and is unable to assist you, is insulted by your request for aid, or might even have an interest in seeing your kingdom struggle against one of your ongoing events. Whatever the case, your pleas for aid make your kingdom look desperate. You gain no aid, but you do increase Unrest by 1d4.",
             "Source": "Kingmaker Adventure Path pg. 528"
+        },
+        {
+            "name": "REST AND RELAX",
+            "description": "Working non-stop can burn out even the most devoted and dedicated individual. As such, it's important to take time for yourself, and thus set a good example for the nation. You take time to relax, and you extend the chance to unwind to your citizens as well. The Kingdom skill you use to determine the effectiveness of your time off depends on how you want to spend it: Use a basic Arts check to spend the time engaged in entertainment or the pursuit of a hobby. Use a basic Boating check to enjoy trips on the lakes and rivers of your kingdom. Use a basic Scholarship check to spend the time reading or studying a topic of personal interest beyond your daily duties. Use a basic Trade check to spend your time shopping or feasting. Use a basic Wilderness check to get away from the bustle and relax in the countryside. If your kingdom Rested and Relaxed the previous Kingdom turn, the DC increases by 4, as your kingdom's production and output hasn't had a chance to catch up to all those vacation days.",
+            "Critical Success": "The citizens enjoy the time off and are ready to get back to work. Reduce Unrest by 1, and the next Leadership activity you take gains a +2 circumstance bonus.",
+            "Success": "The time spent relaxing has calmed nerves; reduce Unrest by 1.",
+            "Failure": "The rest is welcome, but not particularly beneficial in the long term.",
+            "Critical Failure": "The time is wasted, and when you get back to work, you have to spend extra time catching up. Take a \u20132 circumstance penalty to your next skill check made as a Leadership activity"
+        },
+        {
+            "name": "TAP TREASURY",
+            "description": "You tap into the cash reserves of your kingdom for the PCs\u2019 personal use or to provide emergency funding for an event. This is a basic check, but after you succeed or critically succeed at this activity, all future attempts to Tap Treasury have their results worsened two degrees. This penalty persists until funds equal to those taken from the treasury are repaid via Capital Investment.",
+            "Critical Success": "You withdraw funds equal to the Currency per Additional PC column on Table 10\u20139: Party Treasure By Level on page 509 of the Pathfinder Core Rulebook (using your kingdom\u2019s level to set the amount), or you successfully fund the unexpected event that required you to Tap your Treasury.",
+            "Success": "As critical success, but you overdraw your treasury in the attempt. You take a \u20131 circumstance penalty to all Economy-based checks until the end of your next Kingdom turn.",
+            "Failure": "You fail to secure the funds you need, and rumors about the kingdom\u2019s potential shortfall of cash cause you to take a \u20131 circumstance penalty to all Loyalty- and Economy-based checks until the end of your next Kingdom turn.",
+            "Critical Failure": "As failure, but the rumors spiral out of control. Increase Unrest by 1 and add 1 to a Ruin of your choice."
+        },
+        {
+            "name": "TRADE COMMODITIES",
+            "description": "There are five different categories of Commodities: Food, Lumber, Luxuries, Ore, and Stone. When you Trade Commodities, select one Commodity that your kingdom currently stockpiles and reduce that Commodity\u2019s stockpile by up to 4. Then attempt a basic check. If you trade with a group that you\u2019ve established diplomatic relations with, you gain a +1 circumstance bonus to the check.",
+            "Critical Success": "At the beginning of the next Kingdom turn, you gain 2 bonus Resource Dice per point of stockpile expended from your Commodity now.",
+            "Success": "At the beginning of your next Kingdom turn, you gain 1 bonus Resource Die per point of stockpile expended from your Commodity now.",
+            "Failure": "You gain 1 bonus Resource Die at the beginning of your next Kingdom turn.",
+            "Critical Failure": "You gain no bonus Resource Dice (though the Commodity remains depleted). If you Traded Commodities the previous turn, gain 1 Unrest."
         }
     ],
     "turnSteps": [
