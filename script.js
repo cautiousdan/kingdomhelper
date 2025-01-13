@@ -5,20 +5,37 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             const activities = data.activities;
             const flexContainers = {
-                Miscellaneous: document.querySelector('#kingdom-activities .miscellaneous-activities'),
-                Leadership: document.querySelector('#kingdom-activities .leadership-activities'),
-                Region: document.querySelector('#kingdom-activities .region-activities'),
-                Civic: document.querySelector('#kingdom-activities .civic-activities'),
-                Army: document.querySelector('#kingdom-activities .army-activities')
+                Miscellaneous: document.querySelector('.miscellaneous-activities'),
+                Leadership: document.querySelector('.leadership-activities'),
+                Region: document.querySelector('.region-activities'),
+                Civic: document.querySelector('.civic-activities'),
+                Army: document.querySelector('.army-activities')
             };
 
             activities.forEach(activity => {
                 const activityElement = document.createElement('p');
                 activityElement.classList.add('kingdom-activity');
                 const descriptionWithLineBreaks = activity.description.replace(/\n/g, '<br>');
+                let tooltipContent = `Description: ${descriptionWithLineBreaks}`;
+
+                if (activity["Critical Success"]) {
+                    tooltipContent += `<br><br>Critical Success: ${activity["Critical Success"]}`;
+                }
+                if (activity["Success"]) {
+                    tooltipContent += `<br><br>Success: ${activity["Success"]}`;
+                }
+                if (activity["Failure"]) {
+                    tooltipContent += `<br><br>Failure: ${activity["Failure"]}`;
+                }
+                if (activity["Critical Failure"]) {
+                    tooltipContent += `<br><br>Critical Failure: ${activity["Critical Failure"]}`;
+                }
+                if (activity["Special"]) {
+                    tooltipContent += `<br><br>Special: ${activity["Special"]}`;
+                }
                 activityElement.innerHTML = `
                     <span class="activity">${activity.name}
-                        <span class="activity-tooltip">Description: ${descriptionWithLineBreaks}</span>
+                        <span class="activity-tooltip">${tooltipContent}</span>
                     </span>
                 `;
 
